@@ -1,0 +1,129 @@
+.footer{
+    background-image: url(../../images/Mask.png);
+background-repeat: no-repeat;
+background-size: cover;
+object-fit: cover;
+margin: 0 auto;
+height: 300px;
+
+@include for-tablet(){
+    background-position: right;
+}
+}
+
+.footer__box{
+    @include flex();
+    justify-content: space-between;
+    max-width: 1136px ;
+    height: 300px;
+
+@include for-tablet(){
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 50px;
+}
+
+    &-title{
+        font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+color: #FFFFFF;
+cursor: pointer;
+transition: 0.5s ease;
+
+@include for-mobile(){
+    font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+color: #FFFFFF;
+}
+    }
+    &-title:hover{
+        color: rgb(28, 0, 237);
+        transform: scale(1.1);
+    }
+
+    &-images{
+        display: flex;
+        column-gap: 20px;
+    }
+
+
+
+    &-img{
+        max-width: 159px;
+        height: 56px;
+
+        @include for-tablet(){
+            max-width: 159px;
+        height: 56px;
+        }
+        @include for-mobile(){
+            max-width: 130px;
+            height: 40px;
+        }
+    }
+}
+
+
+
+
+.footer-menu{
+min-height: 96px;
+padding: 50px 0;
+background: #333A44;
+
+
+
+
+}
+
+
+.footer__menu{
+    @include flex();
+    justify-content: space-between;
+    min-height: 96px;
+    column-gap: 58px;
+
+    @include for-mobile(){
+        flex-direction: column;
+        row-gap: 41px;
+    }
+
+
+    &-bar{
+        @include flex();
+        justify-content: space-between;
+        width: 100%;
+
+
+        @include for-mobile(){
+            flex-direction: column;
+            row-gap: 85px;
+        }
+    }
+
+    &-ul{
+        @include flex();
+        column-gap: 32px;
+
+
+        @include for-mobile(){
+            flex-direction: column;
+            row-gap: 16px;
+        }
+    }
+
+    &-link{
+        font-weight: 700;
+font-size: 15px;
+line-height: 25px;
+color: #939CAA;
+    }
+
+    &-images{
+        @include flex();
+        column-gap: 24px;
+    }
+}

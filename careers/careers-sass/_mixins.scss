@@ -1,0 +1,25 @@
+@mixin flex(){
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+@mixin for-tablet {
+    @media ( max-width: 922px){
+       @content;
+    }
+}
+
+@mixin for-mobile {
+   @media (max-width: 567px) {
+       @content;
+   }
+}
+
+@mixin for-line{
+    @media  (max-width: 1030px) {
+            @content;
+        }
+    }

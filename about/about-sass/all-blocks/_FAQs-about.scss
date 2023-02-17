@@ -1,0 +1,104 @@
+.FAQs-title{
+    font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+
+color: #495567;
+transition: 0.5s ease;
+cursor: pointer;
+margin: 50px 0;
+}
+.FAQs-title:hover{
+    color: blue;
+    transform: scale(1.1);
+}
+.work{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include for-tablet(){
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+    }
+}
+
+.work__title{
+    font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+color: #495567;
+max-width: 350px;
+transition: 0.5s ease;
+
+
+}
+.work__title:hover{
+    transform: scale(1.1);
+    color: rgb(41, 41, 197);
+}
+
+
+.about__card{
+    max-width: 730px;
+min-height: 191px;
+background: #F2F5F9;
+padding:  42px 40px;
+transition: 0.5s ease;
+
+
+
+&-title{
+    font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #495567;
+padding-bottom: 40px;transition: 0.5s ease;
+cursor: pointer;
+}
+&-title:hover{
+    color: rebeccapurple ;
+}
+
+&-text{
+    font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: #495567;
+cursor: pointer;
+transition: 0.5s ease;
+}
+&-text:hover{
+    color:rgb(89, 57, 122) ;
+}
+}
+
+.about__card:hover{
+    transform: scale(1.1);
+    background:rgb(101, 214, 52);
+}
+.about__card2{
+    max-width: 730px;
+min-height: 92px;
+background: #F2F5F9;
+padding:32px 40px;
+margin: 16px 0;
+transition: 0.5s ease;
+}
+.about__card2:hover{
+    transform: scale(1.1);
+    background:rgb(10, 162, 162);
+}
+.about__card3{
+    max-width: 730px;
+height: 92px;
+background: #F2F5F9;
+padding: 32px 40px;
+transition: 0.5s ease;
+}
+.about__card3:hover{
+    transform: scale(1.1);
+    background:rgb(214, 52, 214);
+}

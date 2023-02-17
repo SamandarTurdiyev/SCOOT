@@ -1,0 +1,87 @@
+
+
+.menus{
+    padding: 44px 0;
+
+
+   
+}
+
+
+.menu{
+    @include flex();
+    justify-content: space-between;
+    padding: 32px 64px 32px 40px;
+    background: #F2F5F9;
+    margin-top: 24px;
+    transition: 0.5s ease;
+
+
+
+    @include for-mobile{
+        flex-direction: column;
+        text-align: center;
+        row-gap: 24px;
+    }
+}
+.menu:hover{
+    background: rgb(125, 191, 54);
+}
+.menu__texts{
+
+
+    &-title{
+        font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #495567;
+cursor: pointer;
+transition: 0.5s ease;
+    }
+    &-title:hover{
+        color: rgb(3, 26, 142);
+        transform: scale(1.1);
+    }
+    &-text{
+        font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: #495567;
+cursor: pointer;
+transition: 0.5s ease;
+padding-top: 12px;
+    }
+    &-text:hover{
+        color: rgb(19, 10, 180);
+    }
+}
+
+.menu__btn{
+
+    &-btn{
+        font-weight: 700;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: #FFFFFF;
+        background:  #FCB72B;
+        padding: 14px 67px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: 0.5s ease;
+
+        @include for-mobile(){
+            padding: 20px 100px;
+        }
+    }
+    &-btn:hover{
+        color: #FCB72B;
+        border: 1px solid #FCB72B;
+        background: #FFFFFF;
+    }
+    &-btn:focus{
+        background: #FFFFFF;
+        color: red;
+        border: 1px solid red;
+    }
+}

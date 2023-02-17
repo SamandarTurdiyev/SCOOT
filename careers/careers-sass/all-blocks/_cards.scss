@@ -1,0 +1,73 @@
+.title{
+    font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+color: #495567;
+cursor: pointer;
+transition: 0.5s ease;
+padding-bottom: 103px
+}
+.title:hover{
+    transform: scale(1.1);
+    color: red;
+}
+
+.cards{
+    @include flex();
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1136px;
+
+    @include for-tablet(){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.card{
+
+    @include for-tablet(){
+        padding: 0 156px;
+    }
+
+    @include for-mobile(){
+        padding: 0 220px;
+    }
+
+    &__title{
+        font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #495567;
+cursor: pointer;
+transition: 0.5s ease;
+padding-top: 32px;
+    }
+
+    &__title:hover{
+        transform: scale(1.1);
+        color: red;
+    }
+    &__text{
+        font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: #939CAA;
+cursor: pointer;
+transition: 0.5s ease;
+padding-top: 27px;
+    }
+    &__text:hover{
+        transform: scale(1.1);
+        color: rgb(162, 30, 30);
+    }
+
+
+    &__img{
+        transition: 0.5s ease;
+    }
+    &__img:hover{
+        transform: scale(1.1);
+    }
+}

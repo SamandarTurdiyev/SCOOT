@@ -1,0 +1,137 @@
+
+
+.girl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0 120px 0;
+
+    @include for-tablet() {
+        text-align: center;    
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+}
+
+.girl__about{
+    max-width: 445px;
+
+
+    &-title{
+        font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+color: #495567;
+cursor: pointer;
+transition: 0.5s ease;
+margin-bottom: 24px;
+
+
+@include for-tablet(){
+    margin-top: 56px;
+}
+
+
+@include for-mobile(){
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #495567;
+
+}
+    }
+    &-title:hover{
+        color: purple;
+        transform: scale(1.1);
+    }
+
+    &-text{
+        font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: #939CAA;
+cursor: pointer;
+transition: 0.5s ease;
+margin-bottom: 40px;
+
+
+@include for-mobile(){
+    padding: 0 34px;
+}
+    }
+    &-text:hover{
+        color: rgb(166, 24, 166);
+        transform: scale(1.1);
+    }
+    
+    &-btn{
+        background:  #FCB72B;;
+        font-weight: 700;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: #FFFFFF;
+padding: 14px 36px;
+cursor: pointer;
+transition: 0.5s ease;
+border: 1px solid transparent;
+    }
+
+    &-btn:hover{
+        background: #FFFFFF;
+        color: #FCB72B;
+        border: 2px solid #FCB72B;
+    }
+    &-btn:focus{
+        background: #ffffff;
+        color: #cf1313;
+        border: 2px solid #cf1313;
+    }
+
+
+
+}
+
+.girl__image{
+    position: relative;
+    transition: 0.5s ease;
+
+
+    &-img{
+        max-width: 445px;
+        border-radius: 50%;
+
+        @include for-tablet(){
+            max-width: 300px;
+        }
+        
+    }
+
+
+    &-line{
+        position: absolute;
+        left: -110px;
+    top: 300px;
+
+    @include for-tablet(){
+        position: absolute;
+        left: -114px;
+        top: 150px;
+    }
+
+    @include for-mobile(){
+        position: absolute;
+        left: 10px;
+        top: 105px;
+    }
+    }
+}
+
+.girl__image:hover{
+    transform: scale(1.1);
+}
+
+
+
+
